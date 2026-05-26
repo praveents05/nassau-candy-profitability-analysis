@@ -13,7 +13,13 @@ st.set_page_config(
 st.title("Product Line Profitability & Margin Performance Analysis")
 
 # Load Dataset
-df = pd.read_csv("cleaned_nassau_candy.csv")
+import os
+
+current_dir = os.path.dirname(__file__)
+
+csv_path = os.path.join(current_dir, "cleaned_nassau_candy.csv")
+
+df = pd.read_csv(csv_path)
 
 # Sidebar Filters
 st.sidebar.header("Filters")
