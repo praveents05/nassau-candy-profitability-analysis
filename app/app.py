@@ -163,7 +163,7 @@ ax4.axhline(
 
 st.pyplot(fig4)
 
-
+st.subheader("Business Recommendations")
 
 st.download_button(
     label="Download Filtered Data",
