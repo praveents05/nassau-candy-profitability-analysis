@@ -165,6 +165,19 @@ st.pyplot(fig4)
 
 st.subheader("Business Recommendations")
 
+st.write("""
+✅ High-sales low-margin products should be reviewed for repricing.
+
+✅ Chocolate division contributes major profit share.
+
+✅ Some products show high operational cost compared to sales.
+
+✅ Pareto analysis indicates a small number of products contribute most profits.
+
+✅ Margin-risk products may require cost renegotiation or discontinuation review.
+""")
+
+
 st.download_button(
     label="Download Filtered Data",
     data=filtered_df.to_csv(index=False),
